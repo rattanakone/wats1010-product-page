@@ -94,6 +94,11 @@ body {
 	border: 1px solid white;
 }
 
+#my-button:hover {
+	color: black;
+	background: white;
+}
+
 .intro-text .text-muted {
 	color: #CCCCCC;
 	font-size: 20px;
