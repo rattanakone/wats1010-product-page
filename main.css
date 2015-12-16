@@ -1,3 +1,220 @@
 /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
+html { 
+    -webkit-font-smoothing: antialiased; 
+}
+
+body {
+	overflow-x: hidden;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+}
+
+#my-nav {
+	border-radius: 0;
+	margin-bottom: 0;
+	border: 0;
+	background: #333332;
+	padding: 10px;
+	font-size: 15px;
+}
+
+#my-nav a {
+	color: white;
+}
+
+.my-title {
+	background-attachment: scroll;
+  background-image: url(images/title.png);
+	border-bottom: 2px solid white;
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.intro-text {
+	padding-top: 200px;
+  padding-bottom: 400px;
+	padding-left: 80px;
+}
+
+.intro-text .intro-lead-in {
+
+    margin-bottom: 15px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 45px;
+		font-weight: 300;
+    line-height: 35px;
+		color: white;
+}
+
+.intro-text .intro-heading {
+    margin-bottom: 5px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+@media(min-width:768px) {
+    .intro-text {
+        padding-top: 200px;
+        padding-bottom: 400px;
+    }
+
+    .intro-text .intro-lead-in {
+
+        margin-bottom: 15px;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        font-size: 45px;
+				font-weight: 300;
+        line-height: 35px;
+				color: white;
+    }
+
+    .intro-text .intro-heading {
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+    }
+}
+
+#my-button {
+	color: white;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	background: transparent;
+	border-radius: 0;
+	border: 1px solid white;
+}
+
+.intro-text .text-muted {
+	color: #CCCCCC;
+	font-size: 20px;
+}
+
+#classes {
+	background-attachment: scroll;
+  background-image: url(images/classes.png);
+	border-bottom: 2px solid white;
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+	padding-bottom: 250px;
+}
+
+#recipes {
+	background-attachment: scroll;
+  background-image: url(images/paella.png);
+	border-bottom: 2px solid white;
+	border-left: 2px solid white;
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+	padding-bottom: 250px;
+}
+
+#videos {
+	background-attachment: scroll;
+  background-image: url(images/camera.png);
+	border-bottom: 2px solid white;
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+	padding-bottom: 100px;
+}
+
+#testimonials {
+	background-attachment: scroll;
+  background-image: url(images/bibimbap.png);
+	border-bottom: 2px solid white;
+	border-left: 2px solid white;
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+	padding-bottom: 100px;
+}
+
+#support {
+	background-attachment: scroll;
+  background-image: url(images/homecooking.png);
+	border-bottom: 2px solid white;
+	border-left: 2px solid white;
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+	padding-bottom: 100px;
+}
+
+#bottom {
+	background: #333332;
+	padding: 100px;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.medium-box {
+	padding-top: 220px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-size: 35px;
+	line-height: 35px;
+	color: white;
+}
+
+.small-box {
+	padding-top: 100px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-size: 35px;
+	line-height: 35px;
+	color: white;
+}
+
+#footer {
+	padding: 0;
+}
+
+#footer li {
+  display: block;
+	font-size: 15px;
+	line-height: 35px;
+}
+
+#footer li a {
+	color: white;
+}
+
+#policy {
+	background: white;
+	padding: 20px;
+	width: 100%;
+	color: #333332;
+	text-decoration: none;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.quicklinks li a {
+	color: #333332;
+}
