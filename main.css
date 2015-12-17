@@ -40,11 +40,7 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-	-moz-animation: fadeIn 0.8s;
-    -ms-animation: fadeIn 0.8s;
-    -o-animation: fadeIn 0.8s;
-	-webkit-animation: fadeIn 0.8s;
-    animation: fadeIn 0.8s;
+
 }
 
 .intro-text {
