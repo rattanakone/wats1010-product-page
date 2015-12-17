@@ -24,6 +24,12 @@ body {
 	color: white;
 }
 
+#my-nav a:hover, #my-nav a:active {
+	
+	text-decoration: underline;
+	color: white;
+}
+
 .my-title {
 	background-attachment: scroll;
   background-image: url(images/title.png);
@@ -94,9 +100,74 @@ body {
 	border: 1px solid white;
 }
 
+#my-button-classes {
+	color: white;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	background: transparent;
+	border-radius: 0;
+	border: 1px solid #0099FF;
+}
+
+#my-button-recipes {
+	color: white;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	background: transparent;
+	border-radius: 0;
+	border: 1px solid #FF6600;
+}
+
+#my-button-videos {
+	color: white;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	background: transparent;
+	border-radius: 0;
+	border: 1px solid #009966;
+}
+
+#my-button-testimonials {
+	color: white;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	background: transparent;
+	border-radius: 0;
+	border: 1px solid #FFCC00;
+}
+
+#my-button-support {
+	color: white;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	background: transparent;
+	border-radius: 0;
+	border: 1px solid #FF0000;
+}
+
 #my-button:hover {
 	color: black;
 	background: white;
+}
+
+#my-button-classes:hover {
+	color: white;
+	background: #0099FF;
+}
+
+#my-button-recipes:hover {
+	color: white;
+	background: #FF6600;
+}
+
+#my-button-videos:hover {
+	color: white;
+	background: #009966;
+}
+
+#my-button-testimonials:hover {
+	color: white;
+	background: #FFCC00;
+}
+
+#my-button-support:hover {
+	color: white;
+	background: #FF0000;
 }
 
 .intro-text .text-muted {
@@ -222,4 +293,18 @@ body {
 
 .quicklinks li a {
 	color: #333332;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
 }
