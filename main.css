@@ -15,7 +15,7 @@ body {
 	border-radius: 0;
 	margin-bottom: 0;
 	border: 0;
-	background: black;
+	background: #191919;
 	padding: 5px;
 	font-size: 15px;
 }
@@ -250,7 +250,7 @@ body {
 }
 
 .intro-text .text-muted {
-	color: whitesmoke;
+	color: #BABABA;
 	font-size: 20px;
 }
 
@@ -323,7 +323,8 @@ body {
 }
 
 #bottom {
-	background: black;
+	background: #191919;
+  border-bottom: 2px solid white;
 	padding: 50px;
 	width: 100%;
 	color: white;
