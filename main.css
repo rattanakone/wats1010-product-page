@@ -14,9 +14,10 @@ body {
 #my-nav {
 	border-radius: 0;
 	margin-bottom: 0;
-	border: 0;
-	background: #191919;
-	padding: 5px;
+	border-color: transparent;
+  border-radius: 0;
+	background: rgba(25,25,25,0.5);
+	padding: 10px;
 	font-size: 15px;
 }
 
@@ -40,12 +41,18 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  opacity: 1;
+  filter: alpha(opacity=40);
+}
 
+.my-title:hover {
+  opacity: 0.9;
+  filter: alpha(opacity=10);
 }
 
 .intro-text {
 	padding-top: 200px;
-  padding-bottom: 400px;
+  padding-bottom: 200px;
 
 }
 
@@ -53,7 +60,7 @@ body {
 
     margin-bottom: 15px;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 60px;
+    font-size: 40px;
 		font-weight: 300;
     line-height: 65px;
 		color: white;
@@ -69,8 +76,8 @@ body {
 
 @media(min-width:768px) {
     .intro-text {
-        padding-top: 200px;
-        padding-bottom: 400px;
+        padding-top: 300px;
+        padding-bottom: 320px;
     }
 
     .intro-text .intro-lead-in {
@@ -94,11 +101,11 @@ body {
 }
 
 #my-button {
-	color: white;
+	color: black;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	background: transparent;
+	background: white;
 	border-radius: 0;
-	border: 1px solid white;
+  border-color: black;
 	display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -117,9 +124,9 @@ body {
 #my-button-classes {
 	color: white;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	background: transparent;
+	background: #0099FF;
 	border-radius: 0;
-	border: 1px solid #0099FF;
+  border-color: white;
 	display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -138,9 +145,9 @@ body {
 #my-button-recipes {
 	color: white;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	background: transparent;
+	background: #FF6600;
 	border-radius: 0;
-	border: 1px solid #FF6600;
+	border-color: white;
 	display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -159,9 +166,9 @@ body {
 #my-button-videos {
 	color: white;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	background: transparent;
+	background: #009966;
 	border-radius: 0;
-	border: 1px solid #009966;
+	border-color: white;
 	display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -180,9 +187,9 @@ body {
 #my-button-testimonials {
 	color: white;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	background: transparent;
+	background: #E5B700;
 	border-radius: 0;
-	border: 1px solid #FFCC00;
+	border-color: white;
 	display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -201,9 +208,9 @@ body {
 #my-button-support {
 	color: white;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	background: transparent;
+	background: #FF0000;
 	border-radius: 0;
-	border: 1px solid #FF0000;
+	border-color: white;
 	display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -220,38 +227,51 @@ body {
 }
 
 #my-button:hover {
-	color: black;
-	background: white;
+	color: white;
+	background: transparent;
+  border-color: white;
 }
 
 #my-button-classes:hover {
 	color: white;
-	background: #0099FF;
+	background: transparent;
+  border-color: #0099FF;
 }
 
 #my-button-recipes:hover {
 	color: white;
-	background: #FF6600;
+	background: transparent;
+  border-color: #FF6600;
 }
 
 #my-button-videos:hover {
 	color: white;
-	background: #009966;
+	background: transparent;
+  border-color: #009966;
 }
 
 #my-button-testimonials:hover {
 	color: white;
-	background: #FFCC00;
+	background: transparent;
+  border-color: #E5B700;
 }
 
 #my-button-support:hover {
 	color: white;
-	background: #FF0000;
+	background: transparent;
+  border-color: #FF0000;
 }
 
 .intro-text .text-muted {
-	color: #BABABA;
-	font-size: 20px;
+	color: white;
+	font-size: 16px;
+}
+
+@media(min-width:768px) {
+  .intro-text .text-muted {
+    color: #BABABA;
+    font-size: 20px;
+  }
 }
 
 #classes {
@@ -265,6 +285,13 @@ body {
   background-size: cover;
   -o-background-size: cover;
 	padding-bottom: 250px;
+  opacity: 1;
+  filter: alpha(opacity=40);
+}
+
+#classes:hover {
+  opacity: 0.9;
+  filter: alpha(opacity=10);
 }
 
 #recipes {
@@ -279,6 +306,13 @@ body {
   background-size: cover;
   -o-background-size: cover;
 	padding-bottom: 250px;
+  opacity: 1;
+  filter: alpha(opacity=40);
+}
+
+#recipes:hover {
+  opacity: 0.9;
+  filter: alpha(opacity=10);
 }
 
 #videos {
@@ -292,6 +326,13 @@ body {
   background-size: cover;
   -o-background-size: cover;
 	padding-bottom: 100px;
+  opacity: 1;
+  filter: alpha(opacity=40);
+}
+
+#videos:hover {
+  opacity: 0.9;
+  filter: alpha(opacity=10);
 }
 
 #testimonials {
@@ -306,6 +347,13 @@ body {
   background-size: cover;
   -o-background-size: cover;
 	padding-bottom: 100px;
+  opacity: 1;
+  filter: alpha(opacity=40);
+}
+
+#testimonials:hover {
+  opacity: 0.9;
+  filter: alpha(opacity=10);
 }
 
 #support {
@@ -320,12 +368,20 @@ body {
   background-size: cover;
   -o-background-size: cover;
 	padding-bottom: 100px;
+  opacity: 1;
+  filter: alpha(opacity=40);
+}
+
+#support:hover {
+  opacity: 0.9;
+  filter: alpha(opacity=10);
 }
 
 #bottom {
 	background: #191919;
   border-bottom: 2px solid white;
-	padding: 50px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 	width: 100%;
 	color: white;
 	text-decoration: none;
@@ -333,7 +389,7 @@ body {
 }
 
 .medium-box {
-	padding-top: 220px;
+	padding-top: 250px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-size: 35px;
 	line-height: 35px;
@@ -341,7 +397,8 @@ body {
 }
 
 .small-box {
-	padding-top: 100px;
+	padding-top: 150px;
+  padding-bottom: 50px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-size: 35px;
 	line-height: 35px;
